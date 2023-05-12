@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 0;
+  color: #797979;
+  font-size: 15px;
+  margin: 5px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.productSide {
+  padding: 10px;
+}
+
+.productUl {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.productBox {
+  background: #ffffff;
+  box-shadow: 0 0 10px 0px #0000002e;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions .left {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+
+}
+
+.cart {
+  padding: 10px;
+}
+
+.cartslist {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cartList {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.quantity-field {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 120px;
+  height: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.quantity-field .value-button {
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 100%;
+  padding: 0;
+  background: #eee;
+  outline: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quantity-field .value-button:hover {
+  background: rgb(230, 230, 230);
+}
+
+.quantity-field .value-button:active {
+  background: rgb(210, 210, 210);
+}
+
+.quantity-field .decrease-button {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.quantity-field .increase-button {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+.quantity-field .number {
+  display: inline-block;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 100%;
+  line-height: 40px;
+  font-size: 11pt;
+  box-sizing: border-box;
+  background: white;
+  font-family: calibri;
+}
+
+.quantity-field .number::selection {
+  background: none;
 }
